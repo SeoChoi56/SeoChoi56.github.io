@@ -34,7 +34,7 @@ function App() {
           </div>
         </div>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<App />} />
           <Route exact path="/demo" element={<Demo />} />
           <Route exact path="/skills&cert" element={<SkillsAndCert />} />
           <Route exact path="/contact" element={<Contact />} />
