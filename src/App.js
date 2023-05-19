@@ -9,6 +9,7 @@ import SkillsAndCert from './components/SkillAndCert'
 function App() {
   return (
     <div className="App">
+      <header className="App-header">
       <BrowserRouter>
         <div id="browserNavContainer">
           <div className="NavBlocks">
@@ -39,7 +40,6 @@ function App() {
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
-      <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
