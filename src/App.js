@@ -1,9 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import Home from './components/Home'
+import Contact from './components/Contact'
+import Demo from './components/Demo'
+import SkillsAndCert from './components/SkillAndCert'
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
+        <div id="browserNavContainer">
+          <div className="NavBlocks">
+            Home
+          </div>
+          <div className="NavBlocks">
+            Demo
+          </div>
+          <div className="NavBlocks">
+            Skills & Certifications
+          </div>
+          <div className="NavBlocks">
+            Contact
+          </div>
+        </div>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/demo" element={<Demo />} />
+          <Route exact path="/skills&cert" element={<SkillsAndCert />} />
+          <Route exact path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
