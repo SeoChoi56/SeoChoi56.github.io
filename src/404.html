@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <script>
+      var path = window.location.pathname;
+      path = path.endsWith('/') ? path : path + '/';
+      window.location.replace(path + '?p=/' + path);
+    </script>
+  </head>
+  <body></body>
+</html>
