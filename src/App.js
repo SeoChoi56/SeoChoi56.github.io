@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import Home from './components/Home'
 import Contact from './components/Contact'
 import Demo from './components/Demo'
@@ -12,16 +12,24 @@ function App() {
       <BrowserRouter>
         <div id="browserNavContainer">
           <div className="NavBlocks">
-            Home
+            <NavLink>
+              Home
+            </NavLink>
           </div>
           <div className="NavBlocks">
-            Demo
+          <NavLink>
+              Demo
+            </NavLink>
           </div>
           <div className="NavBlocks">
-            Skills & Certifications
+          <NavLink>
+              Skills and Certifications
+            </NavLink>
           </div>
           <div className="NavBlocks">
-            Contact
+          <NavLink>
+              Contact
+            </NavLink>
           </div>
         </div>
         <Routes>
